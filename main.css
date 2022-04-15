@@ -1,0 +1,278 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.top{
+  position: relative;
+}
+
+img{
+  color: black;
+}
+
+header{
+  /* background-image: linear-gradient(to right bottom, #5f194a, #541943, #4a183d, #401736, #36162f, #371632, #371634, #371637, #3f1845, #461a55, #4b1d66, #4e2278); */
+  /* height: 80vh; */
+  background-color: rgba(247, 243, 243, 0.05);
+  backdrop-filter: blur(7rem);
+  z-index: 5;
+  position: relative;
+  width: 100%;
+}
+
+
+
+nav{
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a{
+  text-decoration: none;
+  color: White;
+  font-size: 1rem;
+}
+
+.nav-links{
+  display: flex;
+  gap: 3rem;
+  text-transform: uppercase;
+}
+
+.nav-links span{ 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.round{
+  height: .4rem;
+  width: .4rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+}
+
+nav .cta button{
+  outline: none;
+  border-top: 1px solid #CE318E;
+  border-left: 1px solid #CE318E;
+  border-right: 1px solid #CE318E;
+  border-bottom: 1px solid rgba(180, 60, 130,.8);
+  background-color: transparent;
+  padding: .7rem 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: .7rem;
+  cursor: pointer;
+  transition: .5s all ease;
+}
+
+nav .cta button:hover{
+  background-color: #CE318E;
+}
+
+header section{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.main-header-text h1{
+  font-size: 3rem;
+  color: rgb(248, 241, 241);
+}
+
+.nft-special{
+  color: #FF3DB0;
+}
+
+.marketplace{
+  font-weight: 200;
+}
+
+.slash-special{
+  color: #CC00FF;
+}
+
+.small-header-text{
+  color: rgb(226, 226, 226);
+  margin: 2.5rem 0;
+}
+
+
+.header-cta button{
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem 2rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: White;
+  font-weight: bold;
+  background-image: linear-gradient(to right bottom, #9132e5, #9032e4, #9031e2, #8f31e1, #8e30e0, #8f30e2, #9031e3, #9131e5, #9432ea, #9733ef, #9a34f4, #9d35f9);
+}
+
+.header-cta button:hover{
+  background-image: #7a32b9;
+}
+
+.head-img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.head-img img{
+  width: 80%;
+}
+
+.arrow-down{
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+}
+
+.work{
+  background-color: rgba(247, 243, 243, 0.05);
+  backdrop-filter: blur(7rem);
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-heading{
+  color: rgb(243, 243, 243);
+  padding: 3rem 0;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.work1, .work2{
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.work .desc{
+  display: flex;
+  gap: 2rem;
+}
+
+.work .desc h1{
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(136, 134, 134,.5);
+}
+
+.work img{
+  width: 30%;
+}
+
+.work .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.work .info p{
+  width: 65%;
+  color: rgb(218, 218, 218);
+}
+
+
+/* design */
+.design{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  /* width: 100%;
+  height: 100vh; */
+  background-color: black;
+  /* overflow: auto; */
+}
+
+.design .circle1{
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: rgb(180, 60, 130);
+}
+
+.design .circle2{
+  position: absolute;
+  top: 20rem;
+  left: 0%;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: rgb(82, 16, 92);
+}
+.design .circle3{
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: rgb(82, 16, 92);
+}
+
+.design .circle4{
+  position: absolute;
+  top: -5%;
+  right: 0%;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: rgba(180, 60, 130,.8);
+}
+
+.design .circle5{
+  position: absolute;
+  top: 25rem;
+  right: 7%;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background-color: rgba(77, 29, 117,.7);
+}
+
+.design .circle6{
+  position: absolute;
+  top: 25rem;
+  left: 25%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: rgba(126, 39, 197,.5);
+}
