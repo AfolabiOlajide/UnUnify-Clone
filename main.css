@@ -162,6 +162,7 @@ header section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .work-heading{
@@ -190,6 +191,7 @@ header section{
 
 .work img{
   width: 30%;
+  z-index: 5;
 }
 
 .work .info {
@@ -202,6 +204,32 @@ header section{
 .work .info p{
   width: 65%;
   color: rgb(218, 218, 218);
+}
+
+.work-circle{
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-circle1{
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  border: 1px solid rgb(175, 175, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-circle2{
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  border: 1px solid rgb(175, 175, 175);
 }
 
 
@@ -222,8 +250,10 @@ header section{
   position: absolute;
   top: -5%;
   left: -5%;
-  width: 20rem;
-  height: 20rem;
+  /* width: 20rem;
+  height: 20rem; */
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   background-color: rgb(180, 60, 130);
 }
@@ -232,8 +262,10 @@ header section{
   position: absolute;
   top: 25rem;
   left: 0%;
-  width: 50rem;
-  height: 50rem;
+  width: 50vw;
+  height: 50vw;
+  /* width: 50rem;
+  height: 50rem; */
   border-radius: 50%;
   background-color: rgb(82, 16, 92);
 }
@@ -241,8 +273,10 @@ header section{
   position: absolute;
   top: -10%;
   left: 30%;
-  width: 20rem;
-  height: 20rem;
+  width: 20vw;
+  height: 20vw;
+  /* width: 20rem;
+  height: 20rem; */
   border-radius: 50%;
   background-color: rgb(82, 16, 92);
 }
@@ -251,8 +285,10 @@ header section{
   position: absolute;
   top: -5%;
   right: 0%;
-  width: 25rem;
-  height: 25rem;
+  width: 30vw;
+  height: 30vw;
+  /* width: 25rem;
+  height: 25rem; */
   border-radius: 50%;
   background-color: rgba(180, 60, 130,.8);
 }
@@ -261,8 +297,10 @@ header section{
   position: absolute;
   top: 20rem;
   right: 3%;
-  width: 50rem;
-  height: 50rem;
+  width: 55vw;
+  height: 55vw;
+  /* width: 50rem;
+  height: 50rem; */
   border-radius: 50%;
   background-color: rgba(77, 29, 117,.7);
 }
@@ -301,6 +339,7 @@ header section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
 .join {
@@ -325,6 +364,7 @@ header section{
 .join h1{
   padding: 3rem;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .join .social{
@@ -371,4 +411,79 @@ header section{
 .twitter .in3{
   background-color: rgb(162, 55, 255);
   box-shadow: 0 0 5px 3px rgba(162, 55, 255,.7);
+}
+
+.patners{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.patners h1{
+  color: rgb(245, 245, 245);
+  padding: 3rem 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.my-patners{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.pat{
+  font-size: 4rem;
+  color: rgba(136, 134, 134,.5);
+}
+
+.jp-circle1{
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 1%;
+  background-color: rgba(197, 56, 141, 0.3);
+}
+
+.jp-circle2{
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+  background-color: rgba(126, 39, 197,.5);
+}
+
+footer{
+  background-color: black;
+  padding: 2rem 0;
+  border-top: 10px solid rgb(62, 62, 101);
+}
+
+.footer-content{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .logo{
+  color: white;
+}
+
+.footer-content .arr{
+  color: white;
+}
+
+.footer-content .arr span{
+  color: rgba(197, 56, 141, 1);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 992px) {
+
 }
