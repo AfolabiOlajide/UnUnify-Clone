@@ -38,10 +38,30 @@ nav{
   align-items: center;
 }
 
+.ham{
+  display: none;
+}
+
+.ham span{
+  display: block;
+  width: 4rem;
+  height: .5rem;
+  margin: 5px;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #821f5a, #7c1d5f, #741c65, #6b1c6b, #601e70, #602b7e, #5e378c, #5b4299, #645ab3, #6d73cc, #768ce5, #80a5fe);
+}
+
 .logo a{
   text-decoration: none;
   color: White;
   font-size: 1rem;
+}
+
+.link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
 
 .nav-links{
@@ -139,7 +159,7 @@ header section{
 .head-img{
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1%;
 }
 
 .head-img img{
@@ -485,5 +505,64 @@ footer{
 /* media queries */
 
 @media only screen and (max-width: 992px) {
+  .main-header-text h1{
+    font-size: 2rem;
+  }
+
+  .small-header-text{
+    font-size: 1rem;
+  }
+
+  .head-img img{
+    width: 50%;
+  }
+
+  .header-cta button{
+    padding: .7rem 1.5rem;
+    font-size: .7rem;
+  }
+
+  .work-heading{
+    padding: 2rem 0;
+    font-size: 1.4rem;
+  }
+
+  .work .desc h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(136, 134, 134,.5);
+  }
+
+  .desc .info h3{
+    font-size: 1rem;
+  }
+
+  .work .info p{
+    width: 85%;
+    font-size: .7rem;
+  }
+
+  .join h1{
+    font-size: 1.3rem;
+  }
+
+  .social p{
+    font-size: .8rem;
+  }
+
+  .pat{
+    font-size: 2rem;
+  }
 
 }
+
+@media only screen and (max-width: 600px){
+  .ham{
+    display: none;
+  }
+
+  .link{
+    display: none;
+  }
+}
+
