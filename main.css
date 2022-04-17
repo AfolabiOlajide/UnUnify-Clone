@@ -633,6 +633,16 @@ footer{
     width: 50%;
   }
 
+  .arrow-down img{
+    width: 40%;
+  }
+
+  .arrow-down{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+  }
+
   .main-header-text h1{
     font-size: 1.3rem;
   }
