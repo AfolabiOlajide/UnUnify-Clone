@@ -169,8 +169,22 @@ header section{
   bottom: -1%;
 }
 
+.star{
+  position: absolute;
+  left: 5%;
+  top: 20%;
+}
+
+.star img{
+  width: 70%;
+}
+
 .head-img img{
   width: 80%;
+}
+
+.arrow-down img{
+  width: 60%;
 }
 
 .arrow-down{
@@ -614,6 +628,11 @@ footer{
 }
 
 @media only screen and (max-width: 620px){
+
+  .star img{
+    width: 50%;
+  }
+
   .main-header-text h1{
     font-size: 1.3rem;
   }
