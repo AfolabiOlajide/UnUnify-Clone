@@ -9,6 +9,11 @@ body{
   font-family: 'Inter', sans-serif;
 }
 
+.overlay-link{
+  display: none;
+  z-index: 10;
+}
+
 .top{
   position: relative;
 }
@@ -41,6 +46,7 @@ nav{
 .ham{
   display: none;
   cursor: pointer;
+  z-index: 20;
 }
 
 .ham span{
@@ -90,7 +96,7 @@ nav{
   color: white;
 }
 
-nav .cta button{
+nav .cta button, .overlay-link .cta button{
   outline: none;
   border-top: 1px solid #CE318E;
   border-left: 1px solid #CE318E;
@@ -106,7 +112,7 @@ nav .cta button{
   transition: .5s all ease;
 }
 
-nav .cta button:hover{
+nav .cta button:hover, .overlay-link .cta button:hover{
   background-color: #CE318E;
 }
 
@@ -515,15 +521,45 @@ footer{
   .ham{
     display: block;
   }
+  .overlay{
+    transition: .5s all ease;
+  }
+
+  .open{
+    display: none;
+  }
+
+  .overlay-link{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(247, 243, 243, 0.05);
+    backdrop-filter: blur(7rem);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay-link .nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 2rem;
+  }
+
+  .overlay-link .cta button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+
+  
 
   .link{
     display: none;
-    /* top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(247, 243, 243, 0.05);
-    backdrop-filter: blur(7rem); */
   }
 
   .main-header-text h1{
